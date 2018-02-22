@@ -1,0 +1,6 @@
+mixin menu()
+    nav.menu
+        ul.menu__items
+            each object in content.mainMenu
+                li.menu__item
+                    a(href= object["link"]).menu__link= object['title']

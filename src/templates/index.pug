@@ -1,0 +1,168 @@
+extends _layout/layout.pug
+
+
+block title 
+    | Wheater app
+block content
+    header.header
+        .header__container
+            .logo
+                a(href="index.html").logo__desc Fun wheater.
+                //- .logo__desc Fun wheater.
+            +menu()
+            .icons
+                a(href="javascript:void(0);").icons__link
+                    i.icons__icon.icons__icon--fb
+                a(href="javascript:void(0);").icons__link
+                    i.icons__icon.icons__icon--in
+                a(href="javascript:void(0);").icons__link
+                    i.icons__icon.icons__icon--tw
+    section.hero
+        .hero__container
+            .hero__column-right
+                canvas(width="500" height="500" id="canvas")
+                +jelly-svg()
+                h2.hero__title Get the most fun wheather app
+                p.hero__descr Simple nice and user friendly application of the wheater. Only useful information
+                a(href="").btn.btn--hero-color-orange.btn--hero Download
+                a(href="").btn.btn--hero-color-blue Features
+            .hero__column-left
+                .hero__img
+                    img(src="./assets/img/phone.png" alt="Iphone x").hero__phone
+                //- .bubble Sunny
+                //- .bubble London
+                //- .bubble Rio
+                each str, num in ['9', 'Sunny', 'London', 'Rio']
+                    div(class=`bubble-${num + 1}`)= str
+            .arrow-down
+                +arrow-down-svg()
+            .hero__divider
+                svg(class="hero__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 40" preserveAspectRatio="none")
+                    path(d="M0 0 C40 40 50 50 100 0 Z" fill="#648cff")
+    section.section.features
+        .features__container
+            h3.section__title Perfect features
+            span.section__sub-title Only necessary
+            each object in content.featuresData
+                .features__item
+                    span.features__icon
+                    h4.features__title= object['title']
+                    p.features__descr= object['description']
+    section.section.widgets
+        .widgets__container
+            h3.section__title Simple Widgets
+            span.section__sub-title Drag and Drop
+            .arrow-left
+            .arrow-right
+            each objects, index in content.Widgets 
+                div(class=`widgets__card ${index == "widgets2" ? "widgets__card--center" : ""}`)
+                    each item in objects
+                        if !Object.keys(item).length 
+                            .widgets__item.widgets__item--border
+                        else 
+                            .widgets__item
+                                .widgets__left
+                                    .widgets__icon
+                                    span.widgets__good-day= item['weather']
+                                .widgets__right
+                                    span.widgets__city= item['city']
+                                    span.widgets__country= item['country']
+                                    span.widgets__temperature= item['temperature']
+    section.section.screen
+        .screen__container
+            h3.section__title Screenshots
+            span.section__sub-title The brightest images
+            .screen__column-1-5
+                .screen__text Cloudy
+                .screen__img
+                    img(src="./assets/img/screen_phone1.png" alt="Ipone 10").phone
+            .screen__column-1-7
+                i.screen__icon
+                h4.section__title.section__title--screen-left When the clouds
+                p.screen__descr.
+                    Variable information on the air humidity, the feeling 
+                    of the weather, and the ability to share this with your friends
+                ul.rating
+                    li.rating__circle 95%
+                    li.rating__circle 9
+                    li.rating__circle Rainy
+
+            .screen__column-1-7
+                i.screen__icon
+                h4.section__title.section__title--screen-left When the clouds
+                p.screen__descr.
+                    Variable information on the air humidity, the feeling 
+                    of the weather, and the ability to share this with your friends
+                ul.rating
+                    li.rating__circle 95%
+                    li.rating__circle 9
+                    li.rating__circle Rainy
+            .screen__column-1-5
+                .screen__text Cloudy
+                .screen__img
+                    img(src="./assets/img/screen_phone1.png" alt="Ipone 10").phone
+
+            .screen__column-1-5
+                .screen__text Cloudy
+                .screen__img
+                    img(src="./assets/img/screen_phone1.png" alt="Ipone 10").phone
+            .screen__column-1-7
+                i.screen__icon
+                h4.section__title.section__title--screen-left When the clouds
+                p.screen__descr.
+                    Variable information on the air humidity, the feeling 
+                    of the weather, and the ability to share this with your friends
+                ul.rating
+                    li.rating__circle 95%
+                    li.rating__circle 9
+                    li.rating__circle Rainy
+        
+    section.section.blockquote
+        .blockquote__container
+            h3.section__title What people are saying
+            span.section__sub-title Reviews
+            //- p(style="font-size: 90px; line-height: 1; color: #648cff; letter-spacing:-1px;") ’’
+            .blockquote__item
+                blockquote.blockquote__text What art offers is space - a certain breathing room for the spirit. 
+                .blockquote__author John Updike
+            .blockquote__item
+                blockquote.blockquote__text What art offers is space - a certain breathing room for the spirit. 
+                .blockquote__author John Updike
+            .blockquote__item
+                blockquote.blockquote__text What art offers is space - a certain breathing room for the spirit. 
+                .blockquote__author John Updike
+            .blockquote__item
+                blockquote.blockquote__text What art offers is space - a certain breathing room for the spirit. 
+                .blockquote__author John Updike
+    footer.section.footer
+        .footer__top
+            .footer__container
+                .footer__title How download the app?
+                p.footer__content Just download the app from the store.Simple, nice and user-friendly application of theweather. Only relevant and useful information.
+                .footer__download-btns    
+                    a(href="#" class="")
+                    a(href="#" class="")
+                .footer__blur-img
+                    img(src="./assets/img/screen_phone1.png", alt="Phone")
+                    img(src="./assets/img/screen_phone2.png", alt="Phone")
+                    img(src="./assets/img/screen_phone3.png", alt="Phone")
+        .footer__bottom
+            .footer__container.footer__header 
+                .logo
+                    a(href="index.html").logo__desc 
+                        span.footer--1-color Fun 
+                        span.footer--2-color wheater.
+                +menu()
+                .icons
+                    a(href="javascript:void(0);").icons__link
+                        i.icons__icon.icons__icon--fb
+                    a(href="javascript:void(0);").icons__link
+                        i.icons__icon.icons__icon--in
+                    a(href="javascript:void(0);").icons__link
+                        i.icons__icon.icons__icon--tw
+                .divider
+                .footer__copyright 2060 All rights reserved Wheater App Theme by Gravpix 
+                
+
+
+

@@ -1,0 +1,44 @@
+@mixin bubble($w, $h, $ptp, $ptr, $bgcl, $fz, $clr) {
+	position: absolute;
+	border-radius: 100%;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 100;
+	width: $w;
+	height: $h;
+	top: $ptp;
+	right: $ptr;
+	background-color: $bgcl;
+	line-height: $h;
+	font-size: $fz;
+	color: $clr;
+}
+
+.bubble {
+	
+	&-1 {
+		@include bubble(55px, 55px, -70px, -1%, #ffffff, 1.2em, #6ca3ff);
+		
+		&:after {
+			content: "\00b0";
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			color: #6ca3ff;
+		}
+	}
+
+	&-2 {
+		@include bubble(93px, 93px, 80px, 80%, #fc6a42, 1em, #fff);
+	}
+
+	&-3 {
+		@include bubble(90px, 90px, 75px, -5%, #4466c9, 1em, #fff);
+	}
+
+	&-4 {
+		@include bubble(55px, 55px, 340px, -1%, #fcec64, 1em, #6ca3ff);
+	}	
+
+}

@@ -1,0 +1,15 @@
+$cols: 12;
+$gutter: 30px;
+
+
+@mixin container($align:space-between, $wrap:wrap) {
+	display: flex;
+	justify-content: $align;
+  	flex-wrap: $wrap;
+  	max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin col($num) {
+    width: calc( (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) );
+}

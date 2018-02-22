@@ -1,0 +1,118 @@
+{
+    "mainMenu": {
+      "h": {
+        "title": "Home",
+        "link": "javascript:void(0);"
+      },
+      "d": {
+        "title": "Features",
+        "link": "javascript:void(0);"
+      },
+      "f": {
+        "title": "Download",
+        "link": "javascript:void(0);"
+      },
+      "r": {
+        "title": "Reviews",
+        "link": "javascript:void(0);"
+      }
+    },
+
+    "featuresData": {
+      "item1": {
+        "title": "Usability",
+        "description": "Sometimes the simplest things are the hardest to find. So we created a new line for everyday life"
+      },
+
+      "item2": {
+        "title": "Parallax Effect",
+        "description": "Sometimes the simplest things are the hardest to find. So we created a new line for everyday life"
+      },
+
+      "item3": {
+        "title": "Unlimites Colors",
+        "description": "Sometimes the simplest things are the hardest to find. So we created a new line for everyday life"
+      }
+    },
+
+    "Widgets": {
+      "widgets1": {
+        "widgets_item_1": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+  
+        "widgets_item_2": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+        "widgets_item_3": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+
+        "widgets_item_4": {
+
+        }
+
+      },
+
+      "widgets2": {
+        "widgets_item_1": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+  
+        "widgets_item_2": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+        "widgets_item_3": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+
+        "widgets_item_4": {
+
+        }
+      },
+
+       "widgets3": {
+        "widgets_item_1": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+  
+        "widgets_item_2": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+        "widgets_item_3": {
+          "weather": "Cloudy",
+          "city": "Kyiev",
+          "country": "Ukraine",
+          "temperature": "10"
+        },
+
+        "widgets_item_4": {
+
+        }
+      }
+    }
+  }

@@ -1,0 +1,19 @@
+.header {
+    position: absolute;
+    padding-top: 1em;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1170px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,52 @@
+.blockquote {
+	padding-top: 150px;
+
+	&__container {
+		@include container();
+	}
+	
+	&__text {
+		margin: 0;
+		font-weight: 400;
+		color: #353854;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+
+	&__author {
+		margin-top: 20px;
+		font-size: 18px;
+		color: #353854;
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+		margin-top: 165px;
+		flex: 0 1 auto;
+		@include col(6);
+
+
+		&:after,
+		&:before {
+			content: '’’';
+			position: absolute;
+			display: block;
+			color: #648cff;
+			font-weight: 700;
+			font-size: 120px;
+			line-height: 1;
+		}
+
+		&:before {
+			top: -130px;
+			left: -5px;
+			transform: rotate(180deg);
+		}
+
+		&:after {
+			right: 0;
+			bottom: -105px;
+		}
+	}
+}

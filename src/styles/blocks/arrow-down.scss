@@ -1,0 +1,23 @@
+.arrow-down {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	background-color: #fff;
+	cursor: pointer;
+	text-align: center;
+	line-height: 55px;
+	box-shadow: 0 1px 1px 0 rgba(49, 48, 48, 0.58);
+	&__svg {
+		display: inline-block;
+		width: 17px;
+		height: 14px;
+		path {
+			fill: #ff5459;
+		}
+	}
+}

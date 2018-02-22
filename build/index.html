@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet">
+    <title> Wheater app
+    </title>
+    <body>
+      <div class="wrapper">
+        <header class="header">
+          <div class="header__container">
+            <div class="logo"><a class="logo__desc" href="index.html">Fun wheater.</a></div>
+            <nav class="menu">
+              <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Features</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Download</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Reviews</a></li>
+              </ul>
+            </nav>
+            <div class="icons"><a class="icons__link" href="javascript:void(0);"><i class="icons__icon icons__icon--fb"></i></a><a class="icons__link" href="javascript:void(0);"><i class="icons__icon icons__icon--in"></i></a><a class="icons__link" href="javascript:void(0);"><i class="icons__icon icons__icon--tw"></i></a></div>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__column-right">
+              <canvas width="500" height="500" id="canvas"></canvas>
+              <svg class="l-jelly">
+                <defs>
+                  <path id="jelly" d="M18.5,8.5c0.3-1,0.9-1.7,2-3c0.9-1,1.3-1.5,2-2c0.5-0.3,2.1-1.4,4-1c0.3,0.1,0.8,0.4,2,1c2.4,1.3,2.8,1.7,3,2c0.1,0.2,0.7,0.9,1,2c0.3,1.1,0.2,2,0,3c-0.2,1-0.3,2-1,3c-0.8,1.1-1.2,0.8-2,2c-0.8,1.2-0.9,2.4-1,3c-0.1,0.6-0.1,1.2,0,2c0.3,2.8,1.4,3.3,2,6c0.2,1.1,0.5,2.4,0,4c-0.2,0.5-0.7,1.9-2,3c-2.8,2.3-6.5,1.2-7,1c-0.9-0.3-3-1-4-3c-0.9-1.8-0.4-3.8,0-5c0.6-2.2,1.3-2,2-4c1.1-3.2,0.2-6.4,0-7c-0.4-1.3-0.7-1.5-1-3C18.3,11.4,18,10,18.5,8.5z"></path>
+                </defs>
+              </svg>
+              <h2 class="hero__title">Get the most fun wheather app</h2>
+              <p class="hero__descr">Simple nice and user friendly application of the wheater. Only useful information</p><a class="btn btn--hero-color-orange btn--hero" href="">Download</a><a class="btn btn--hero-color-blue" href="">Features</a>
+            </div>
+            <div class="hero__column-left">
+              <div class="hero__img"><img class="hero__phone" src="./assets/img/phone.png" alt="Iphone x"></div>
+              <div class="bubble-1">9</div>
+              <div class="bubble-2">Sunny</div>
+              <div class="bubble-3">London</div>
+              <div class="bubble-4">Rio</div>
+            </div>
+            <div class="arrow-down">
+              <svg class="arrow-down__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.847 451.847" xml:space="preserve">
+                <g>
+                  <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="hero__divider">
+              <svg class="hero__svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 40" preserveAspectRatio="none">
+                <path d="M0 0 C40 40 50 50 100 0 Z" fill="#648cff"></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="section features">
+          <div class="features__container">
+            <h3 class="section__title">Perfect features</h3><span class="section__sub-title">Only necessary</span>
+            <div class="features__item"><span class="features__icon"></span>
+              <h4 class="features__title">Usability</h4>
+              <p class="features__descr">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+            </div>
+            <div class="features__item"><span class="features__icon"></span>
+              <h4 class="features__title">Parallax Effect</h4>
+              <p class="features__descr">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+            </div>
+            <div class="features__item"><span class="features__icon"></span>
+              <h4 class="features__title">Unlimites Colors</h4>
+              <p class="features__descr">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life</p>
+            </div>
+          </div>
+        </section>
+        <section class="section widgets">
+          <div class="widgets__container">
+            <h3 class="section__title">Simple Widgets</h3><span class="section__sub-title">Drag and Drop</span>
+            <div class="arrow-left"></div>
+            <div class="arrow-right"></div>
+            <div class="widgets__card ">
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item widgets__item--border"></div>
+            </div>
+            <div class="widgets__card widgets__card--center">
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item widgets__item--border"></div>
+            </div>
+            <div class="widgets__card ">
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item">
+                <div class="widgets__left">
+                  <div class="widgets__icon"></div><span class="widgets__good-day">Cloudy</span>
+                </div>
+                <div class="widgets__right"><span class="widgets__city">Kyiev</span><span class="widgets__country">Ukraine</span><span class="widgets__temperature">10</span></div>
+              </div>
+              <div class="widgets__item widgets__item--border"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section screen">
+          <div class="screen__container">
+            <h3 class="section__title">Screenshots</h3><span class="section__sub-title">The brightest images</span>
+            <div class="screen__column-1-5">
+              <div class="screen__text">Cloudy</div>
+              <div class="screen__img"><img class="phone" src="./assets/img/screen_phone1.png" alt="Ipone 10"></div>
+            </div>
+            <div class="screen__column-1-7"><i class="screen__icon"></i>
+              <h4 class="section__title section__title--screen-left">When the clouds</h4>
+              <p class="screen__descr">
+                Variable information on the air humidity, the feeling 
+                of the weather, and the ability to share this with your friends
+              </p>
+              <ul class="rating">
+                <li class="rating__circle">95%</li>
+                <li class="rating__circle">9</li>
+                <li class="rating__circle">Rainy</li>
+              </ul>
+            </div>
+            <div class="screen__column-1-7"><i class="screen__icon"></i>
+              <h4 class="section__title section__title--screen-left">When the clouds</h4>
+              <p class="screen__descr">
+                Variable information on the air humidity, the feeling 
+                of the weather, and the ability to share this with your friends
+              </p>
+              <ul class="rating">
+                <li class="rating__circle">95%</li>
+                <li class="rating__circle">9</li>
+                <li class="rating__circle">Rainy</li>
+              </ul>
+            </div>
+            <div class="screen__column-1-5">
+              <div class="screen__text">Cloudy</div>
+              <div class="screen__img"><img class="phone" src="./assets/img/screen_phone1.png" alt="Ipone 10"></div>
+            </div>
+            <div class="screen__column-1-5">
+              <div class="screen__text">Cloudy</div>
+              <div class="screen__img"><img class="phone" src="./assets/img/screen_phone1.png" alt="Ipone 10"></div>
+            </div>
+            <div class="screen__column-1-7"><i class="screen__icon"></i>
+              <h4 class="section__title section__title--screen-left">When the clouds</h4>
+              <p class="screen__descr">
+                Variable information on the air humidity, the feeling 
+                of the weather, and the ability to share this with your friends
+              </p>
+              <ul class="rating">
+                <li class="rating__circle">95%</li>
+                <li class="rating__circle">9</li>
+                <li class="rating__circle">Rainy</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section blockquote">
+          <div class="blockquote__container">
+            <h3 class="section__title">What people are saying</h3><span class="section__sub-title">Reviews</span>
+            <div class="blockquote__item">
+              <blockquote class="blockquote__text">What art offers is space - a certain breathing room for the spirit. </blockquote>
+              <div class="blockquote__author">John Updike</div>
+            </div>
+            <div class="blockquote__item">
+              <blockquote class="blockquote__text">What art offers is space - a certain breathing room for the spirit. </blockquote>
+              <div class="blockquote__author">John Updike</div>
+            </div>
+            <div class="blockquote__item">
+              <blockquote class="blockquote__text">What art offers is space - a certain breathing room for the spirit. </blockquote>
+              <div class="blockquote__author">John Updike</div>
+            </div>
+            <div class="blockquote__item">
+              <blockquote class="blockquote__text">What art offers is space - a certain breathing room for the spirit. </blockquote>
+              <div class="blockquote__author">John Updike</div>
+            </div>
+          </div>
+        </section>
+        <footer class="section footer">
+          <div class="footer__top">
+            <div class="footer__container">
+              <div class="footer__title">How download the app?</div>
+              <p class="footer__content">Just download the app from the store.Simple, nice and user-friendly application of theweather. Only relevant and useful information.</p>
+              <div class="footer__download-btns">   <a href="#"></a><a href="#"></a></div>
+              <div class="footer__blur-img"><img src="./assets/img/screen_phone1.png" alt="Phone"><img src="./assets/img/screen_phone2.png" alt="Phone"><img src="./assets/img/screen_phone3.png" alt="Phone"></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__container footer__header"> 
+              <div class="logo"><a class="logo__desc" href="index.html"> <span class="footer--1-color">Fun </span><span class="footer--2-color">wheater.</span></a></div>
+              <nav class="menu">
+                <ul class="menu__items">
+                  <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Features</a></li>
+                  <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Download</a></li>
+                  <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Reviews</a></li>
+                </ul>
+              </nav>
+              <div class="icons"><a class="icons__link" href="javascript:void(0);"><i class="icons__icon icons__icon--fb"></i></a><a class="icons__link" href="javascript:void(0);"><i class="icons__icon icons__icon--in"></i></a><a class="icons__link" href="javascript:void(0);"><i class="icons__icon icons__icon--tw"></i></a></div>
+              <div class="divider"></div>
+              <div class="footer__copyright">2060 All rights reserved Wheater App Theme by Gravpix </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="./js/main.js"> </script>
+    </body>
+  </head>
+</html>

@@ -1,0 +1,31 @@
+.icons {
+    @include col(3);
+	// padding-top: 15px;
+	height: 29px;
+	text-align: right;
+    &__link {
+        display: inline-block;
+    }
+
+    &__link:nth-child(-n+2) {
+		margin-right: 20px;
+    }
+
+    &__icon {
+        display: block;
+        width: 26px;
+        height: 29px;
+        &--fb {
+        	background: url('../assets/img/icons/facebook-logo.svg') no-repeat;
+        }
+
+        &--tw {
+        	background: url('../assets/img/icons/twitter-logo-silhouette.svg') no-repeat;
+        }
+
+         &--in {
+        	background: url('../assets/img/icons/instagram-logo.svg') no-repeat;
+        }
+		
+    }
+}

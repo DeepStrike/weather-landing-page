@@ -1,0 +1,84 @@
+.screen {
+
+	&__container {
+		@include container();
+	}
+
+	&__column-1-5,
+	&__column-1-7 {
+		margin-top: 250px;
+	}
+
+	&__column-1-5 {
+		@include col(5);
+		position: relative;
+	}
+
+	&__column-1-7 {
+		@include col(7);
+		padding-left: 70px;
+		padding-top: 210px;
+		position: relative;
+	}
+
+	&__icon {
+		position: absolute;
+		display: block;
+		top: 120px;
+		width: 121px;
+		height: 63px;
+		background-image: url(../assets/img/icons/mini-cloud.png);
+		background-size: cover;
+	}
+
+	&__img {
+		margin-left: 90px;
+		width: 290px;
+		height: 605px;
+	}
+
+	&__text {
+		display: block;
+		position: absolute;
+		top: 30%;
+		font-weight: 400;
+		color: #ededf2;
+		font-size: 236px;
+		line-height: 1;
+		z-index: -10;
+		transform: rotate(90deg);
+	}
+
+	.section__title--screen-left {
+		text-align: left;
+	}
+
+	&__descr {
+		width: 500px;
+		margin-top: 20px;
+		font-size: 20px;
+		line-height: 1.4;
+		font-weight: 400;
+	}
+
+
+}
+
+.rating {
+	margin-top: 50px;
+
+	&__circle {
+		display: inline-block;
+		margin-right: -14px;
+		width: 60px;
+		height: 60px;
+		font-size: 16px;
+		font-weight: 700;
+		color: #c3cfe5;
+		line-height: 60px;
+		text-align: center;
+		border-radius: 100%;
+		
+		box-shadow: 3px 1px 10px 0 rgba(0,0,0,.13);
+	}
+}

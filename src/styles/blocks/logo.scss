@@ -1,0 +1,11 @@
+.logo {
+    display: block;
+    @include col(3);
+
+    &__desc {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase
+    }
+}
